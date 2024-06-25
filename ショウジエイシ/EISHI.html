@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>庄司英志 - 未来を描く異端児</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .glitch {
+            font-size: 5em;
+            font-weight: bold;
+            text-transform: uppercase;
+            position: relative;
+            text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+                         0.025em 0.04em 0 #fffc00;
+            animation: glitch 725ms infinite;
+        }
+        .glitch span {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .glitch span:first-child {
+            animation: glitch 500ms infinite;
+            clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+            transform: translate(-0.04em, -0.03em);
+            opacity: 0.75;
+        }
+        .glitch span:last-child {
+            animation: glitch 375ms infinite;
+            clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+            transform: translate(0.04em, 0.03em);
+            opacity: 0.75;
+        }
+        @keyframes glitch {
+            0% {
+                text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+                             0.025em 0.04em 0 #fffc00;
+            }
+            15% {
+                text-shadow: 0.05em 0 0 #00fffc, -0.03em -0.04em 0 #fc00ff,
+                             0.025em 0.04em 0 #fffc00;
+            }
+            16% {
+                text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
+                             -0.05em -0.05em 0 #fffc00;
+            }
+            49% {
+                text-shadow: -0.05em -0.025em 0 #00fffc, 0.025em 0.035em 0 #fc00ff,
+                             -0.05em -0.05em 0 #fffc00;
+            }
+            50% {
+                text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
+                             0 -0.04em 0 #fffc00;
+            }
+            99% {
+                text-shadow: 0.05em 0.035em 0 #00fffc, 0.03em 0 0 #fc00ff,
+                             0 -0.04em 0 #fffc00;
+            }
+            100% {
+                text-shadow: -0.05em 0 0 #00fffc, -0.025em -0.04em 0 #fc00ff,
+                             -0.04em -0.025em 0 #fffc00;
+            }
+        }
+        .subtitle {
+            font-size: 1.5em;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .description {
+            max-width: 600px;
+            margin: 40px auto;
+            text-align: center;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .cta {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff00ff;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .cta:hover {
+            background-color: #00ffff;
+            transform: scale(1.1);
+        }
+        .background-text {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20vw;
+            color: rgba(255, 255, 255, 0.03);
+            z-index: -1;
+            user-select: none;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="glitch">
+            庄司英志
+            <span aria-hidden="true">庄司英志</span>
+            <span aria-hidden="true">庄司英志</span>
+        </h1>
+        <p class="subtitle">未来を描く異端児</p>
+        <div class="description">
+            常識を打ち破り、想像の限界を超える。庄司英志は、既存の枠組みにとらわれない革新的思考で、
+            未来のビジョンを描き続ける。その独創性と先見性は、世界を変える力を秘めている。
+        </div>
+        <a href="EISHIprofile.html" class="cta">庄司英志の世界へ</a>
+    </div>
+    <div class="background-text">INNOVATION VISIONARY FUTURE</div>
+</body>
+</html>
